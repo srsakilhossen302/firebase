@@ -42,22 +42,18 @@ class _SigninPageState extends State<SigninPage> {
   }
 
   /// Google Sign-In
-  Future<void> gSignIn() async {
+  Future<void>gSignIn()async{
     try {
       final GoogleSignIn googleSignIn = GoogleSignIn();
       final GoogleSignInAccount? gUser = await googleSignIn.signIn();
       if (gUser == null) return; /// User cancelled
-
       final GoogleSignInAuthentication gAuth = await gUser.authentication;
-
       final credential = GoogleAuthProvider.credential(
         accessToken: gAuth.accessToken,
         idToken: gAuth.idToken,
       );
-
       /// Firebase sign-in
       UserCredential userCredential = await FirebaseAuth.instance.signInWithCredential(credential);
-
       /// Optional: check if user exists in Firebase
       if (userCredential.user != null) {
         Get.offAll(HomePage());
