@@ -19,8 +19,6 @@ class _SignUpState extends State<SignUp> {
 
 
 
-
-
   signUp() async {
 
     try {

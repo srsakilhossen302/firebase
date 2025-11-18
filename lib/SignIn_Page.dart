@@ -42,6 +42,12 @@ class _SigninPageState extends State<SigninPage> {
     }
   }
 
+  ///git config user.name
+  /// git config user.email
+  /// git config user.name "srsakilhossen302"
+  /// git config user.email "ce.sakilhossen302@gmail.com"
+  /// pblm hocilo
+
 
   /// Google Sign-In
   Future<void>gSignIn()async{
