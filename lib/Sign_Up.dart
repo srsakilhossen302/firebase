@@ -17,18 +17,26 @@ class _SignUpState extends State<SignUp> {
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
 
+
+
+
+
   signUp() async {
+
     try {
+
       UserCredential userCredential = await FirebaseAuth.instance
           .createUserWithEmailAndPassword(
-            email: emailController.text,
-            password: passwordController.text,
-          );
+        email: emailController.text,
+        password: passwordController.text,
+      );
+
       Get.offAll(Wrapper());
 
     } on FirebaseAuthException catch (e) {
       ScaffoldMessenger.of(
         context,
+
       ).showSnackBar(SnackBar(content: Text(e.message ?? 'Sign Up failed')));
     }
   }
