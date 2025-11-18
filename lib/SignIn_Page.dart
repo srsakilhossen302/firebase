@@ -29,17 +29,19 @@ class _SigninPageState extends State<SigninPage> {
   }
 
   /// Email / Password Sign-In
+
   signin() async {
     try {
       await _auth.signInWithEmailAndPassword(
-        email: emailController.text.trim(),
-        password: passwordController.text.trim(),
+          email: emailController.text.trim(),
+          password: passwordController.text.trim(),
       );
       Get.offAll(HomePage());
-    } catch (e) {
+    }  catch (e) {
       Get.snackbar("Error", e.toString());
     }
   }
+
 
   /// Google Sign-In
   Future<void>gSignIn()async{
