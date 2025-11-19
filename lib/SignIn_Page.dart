@@ -5,6 +5,7 @@ import 'package:google_sign_in/google_sign_in.dart';
 import 'package:my_app/Forget_Password.dart';
 import 'package:my_app/Home%20Directory/Home_Page.dart';
 import 'package:my_app/Sign_Up.dart';
+import 'package:my_app/Wrapper.dart';
 
 class SigninPage extends StatefulWidget {
   const SigninPage({super.key});
@@ -29,7 +30,7 @@ class _SigninPageState extends State<SigninPage> {
           email: emailController.text.trim(),
           password: passwordController.text.trim(),
       );
-      Get.offAll(() => HomePage());
+      Get.offAll(() => Wrapper());
     }  catch (e) {
       Get.snackbar("Error", e.toString());
     }
@@ -57,7 +58,7 @@ class _SigninPageState extends State<SigninPage> {
       UserCredential userCredential = await FirebaseAuth.instance.signInWithCredential(credential);
       /// Optional: check if user exists in Firebase
       if (userCredential.user != null) {
-        Get.offAll(HomePage());
+        Get.offAll(() => Wrapper());
       }
     } catch (e) {
       Get.snackbar("Google Sign-In Error", e.toString());
@@ -100,7 +101,7 @@ class _SigninPageState extends State<SigninPage> {
             Align(
               alignment: Alignment.centerLeft,
               child: GestureDetector(
-                onTap: () => Get.to(ForgetPassword()),
+                onTap: () =>  Get.to(() => ForgetPassword()),
                 child: const Text(
                   "Forget Password?",
                   style: TextStyle(
@@ -143,7 +144,7 @@ class _SigninPageState extends State<SigninPage> {
               children: [
                 const Text("Don't have an account?"),
                 TextButton(
-                  onPressed: () => Get.to(SignUp()),
+                  onPressed: () =>  Get.offAll(() => SignUp()),
                   child: const Text("Sign Up"),
                 ),
               ],
