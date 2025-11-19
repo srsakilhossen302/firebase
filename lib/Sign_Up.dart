@@ -28,9 +28,7 @@ class _SignUpState extends State<SignUp> {
         email: emailController.text,
         password: passwordController.text,
       );
-
-      Get.offAll(Wrapper());
-
+      Get.offAll(() => Wrapper());
     } on FirebaseAuthException catch (e) {
       ScaffoldMessenger.of(
         context,
@@ -83,7 +81,7 @@ class _SignUpState extends State<SignUp> {
               Text("Already Have Account"),
 
               TextButton(onPressed: () {
-               Get.to(SigninPage());
+                Get.offAll(() => SigninPage());
               }, child: Text("Sign In")),
             ],
           ),
