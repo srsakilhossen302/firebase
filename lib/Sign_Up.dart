@@ -4,7 +4,7 @@ import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:my_app/SignIn_Page.dart';
 import 'package:my_app/Wrapper.dart';
-import 'Home_Page.dart';
+import 'Home Directory/Home_Page.dart';
 
 class SignUp extends StatefulWidget {
   const SignUp({super.key});

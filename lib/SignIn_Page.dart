@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:my_app/Forget_Password.dart';
-import 'package:my_app/Home_Page.dart';
+import 'package:my_app/Home%20Directory/Home_Page.dart';
 import 'package:my_app/Sign_Up.dart';
 
 class SigninPage extends StatefulWidget {
@@ -20,13 +20,6 @@ class _SigninPageState extends State<SigninPage> {
   final FirebaseAuth _auth = FirebaseAuth.instance;
 
   @override
-  void initState() {
-    super.initState();
-    /// Check if user is already signed in
-    if (_auth.currentUser != null) {
-      Get.offAll(HomePage());
-    }
-  }
 
   /// Email / Password Sign-In
 
@@ -36,7 +29,7 @@ class _SigninPageState extends State<SigninPage> {
           email: emailController.text.trim(),
           password: passwordController.text.trim(),
       );
-      Get.offAll(HomePage());
+      Get.offAll(() => HomePage());
     }  catch (e) {
       Get.snackbar("Error", e.toString());
     }

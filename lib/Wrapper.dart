@@ -1,7 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:my_app/Email_Verified.dart';
-import 'package:my_app/Home_Page.dart';
+import 'package:my_app/Home%20Directory/Home_Page.dart';
 import 'package:my_app/SignIn_Page.dart';
 class Wrapper extends StatefulWidget {
   const Wrapper({super.key});
