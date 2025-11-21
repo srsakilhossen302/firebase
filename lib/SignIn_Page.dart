@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:my_app/Forget_Password.dart';
-import 'package:my_app/Home%20Directory/Home_Page.dart';
 import 'package:my_app/Sign_Up.dart';
 import 'package:my_app/Wrapper.dart';
 
@@ -20,18 +19,18 @@ class _SigninPageState extends State<SigninPage> {
 
   final FirebaseAuth _auth = FirebaseAuth.instance;
 
+  get dotenv => null;
+
   @override
-
   /// Email / Password Sign-In
-
   signin() async {
     try {
       await _auth.signInWithEmailAndPassword(
-          email: emailController.text.trim(),
-          password: passwordController.text.trim(),
+        email: emailController.text.trim(),
+        password: passwordController.text.trim(),
       );
       Get.offAll(() => Wrapper());
-    }  catch (e) {
+    } catch (e) {
       Get.snackbar("Error", e.toString());
     }
   }
@@ -42,36 +41,22 @@ class _SigninPageState extends State<SigninPage> {
   /// git config user.email "ce.sakilhossen302@gmail.com"
   /// pblm hocilo
 
-
   /// Google Sign-In
-  Future<void>gSignIn()async{
-    try {
-      final GoogleSignIn googleSignIn = GoogleSignIn();
-      final GoogleSignInAccount? gUser = await googleSignIn.signIn();
-      if (gUser == null) return; /// User cancelled
-      final GoogleSignInAuthentication gAuth = await gUser.authentication;
-      final credential = GoogleAuthProvider.credential(
-        accessToken: gAuth.accessToken,
-        idToken: gAuth.idToken,
-      );
-      /// Firebase sign-in
-      UserCredential userCredential = await FirebaseAuth.instance.signInWithCredential(credential);
-      /// Optional: check if user exists in Firebase
-      if (userCredential.user != null) {
-        Get.offAll(() => Wrapper());
-      }
-    } catch (e) {
-      Get.snackbar("Google Sign-In Error", e.toString());
-    }
-  }
+  googleSignIn()async{
+    final GoogleSignInAccount? googleUser = await GoogleSignIn().signIn();
+    final GoogleSignInAuthentication? googleAuth = await googleUser?.authentication;
 
+    final credential = GoogleAuthProvider.credential(
+      accessToken: googleAuth?.accessToken,
+      idToken: googleAuth?.idToken
+    );
+    await FirebaseAuth.instance.signInWithCredential(credential);
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("Sign In Page"),
-      ),
+      appBar: AppBar(title: const Text("Sign In Page")),
       body: Padding(
         padding: const EdgeInsets.all(20),
         child: Column(
@@ -101,7 +86,7 @@ class _SigninPageState extends State<SigninPage> {
             Align(
               alignment: Alignment.centerLeft,
               child: GestureDetector(
-                onTap: () =>  Get.to(() => ForgetPassword()),
+                onTap: () => Get.to(() => ForgetPassword()),
                 child: const Text(
                   "Forget Password?",
                   style: TextStyle(
@@ -114,15 +99,12 @@ class _SigninPageState extends State<SigninPage> {
             const SizedBox(height: 20),
 
             /// Email/Password Sign-In Button
-            ElevatedButton(
-              onPressed: signin,
-              child: const Text("Sign In"),
-            ),
+            ElevatedButton(onPressed: signin, child: const Text("Sign In")),
             const SizedBox(height: 20),
 
             /// Google Sign-In Button
             ElevatedButton(
-              onPressed: gSignIn,
+              onPressed: googleSignIn,
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.white,
                 foregroundColor: Colors.black,
@@ -144,7 +126,7 @@ class _SigninPageState extends State<SigninPage> {
               children: [
                 const Text("Don't have an account?"),
                 TextButton(
-                  onPressed: () =>  Get.offAll(() => SignUp()),
+                  onPressed: () => Get.offAll(() => SignUp()),
                   child: const Text("Sign Up"),
                 ),
               ],
