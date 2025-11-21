@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 import 'package:http/http.dart' as http;
 import '../SignIn_Page.dart';
 import 'Models/Products_Model.dart';
@@ -14,7 +15,19 @@ class HomePage extends StatefulWidget {
   State<HomePage> createState() => _HomePageState();
 }
 
+
 class _HomePageState extends State<HomePage> {
+
+  signout() async {
+    await FirebaseAuth.instance.signOut();           // Firebase sign-out
+    await GoogleSignIn().signOut();                 // Google session clear
+    await GoogleSignIn().disconnect();              // Force account selection next time
+  }
+
+
+
+
+
   List<ProductsModel> products = [];
 
   Future<List<ProductsModel>>? _futureProducts;
@@ -49,11 +62,8 @@ class _HomePageState extends State<HomePage> {
         actions: [
           IconButton(
             icon: const Icon(Icons.logout),
-            onPressed: () async {
-              await FirebaseAuth.instance.signOut();
-              Get.offAll(SigninPage());
-            },
-          ),
+            onPressed: signout,
+          )
         ],
       ),
 
