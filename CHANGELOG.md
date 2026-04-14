@@ -106,3 +106,6 @@
 ## v1.4.5
 - feat: add half-star rating support to ProductCard
 
+## v1.4.6
+- feat: navigate to ProductDetailScreen on ProductCard tap
+
