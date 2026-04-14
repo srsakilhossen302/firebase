@@ -25,3 +25,6 @@
 ## v1.1.8
 - fix: null-safe Google sign-in with early return on cancel
 
+## v1.1.9
+- style: add OR divider between email and Google sign-in buttons
+
