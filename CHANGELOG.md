@@ -79,3 +79,6 @@
 ## v1.3.6
 - style: add animated scale icon to EmailVerified header
 
+## v1.3.7
+- feat: add fetchCategories() function to api_call.dart
+
