@@ -91,3 +91,6 @@
 ## v1.4.0
 - refactor: extract base URL as constant in api_call.dart
 
+## v1.4.1
+- feat: add Hero animation tag to ProductCard image
+
