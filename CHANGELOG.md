@@ -160,3 +160,6 @@
 ## v1.6.3
 - feat: add search bar to ProductScreen with live filtering
 
+## v1.6.4
+- feat: add sort by price ascending to ProductScreen
+
