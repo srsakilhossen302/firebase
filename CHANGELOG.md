@@ -82,3 +82,6 @@
 ## v1.3.7
 - feat: add fetchCategories() function to api_call.dart
 
+## v1.3.8
+- feat: add fetchProductsByCategory() to api_call.dart
+
