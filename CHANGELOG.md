@@ -133,3 +133,6 @@
 ## v1.5.4
 - feat: add error/retry state to HomePage FutureBuilder
 
+## v1.5.5
+- refactor: move product grid to GridView in HomePage
+
