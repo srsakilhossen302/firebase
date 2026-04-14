@@ -169,3 +169,6 @@
 ## v1.6.6
 - feat: add sort by top rating to ProductScreen
 
+## v1.6.7
+- feat: add active sort indicator chip to ProductScreen
+
