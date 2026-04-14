@@ -52,3 +52,6 @@
 ## v1.2.7
 - fix: add dispose() to SignUp controllers to prevent memory leak
 
+## v1.2.8
+- style: add account creation icon header to SignUp page
+
