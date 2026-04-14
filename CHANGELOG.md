@@ -157,3 +157,6 @@
 ## v1.6.2
 - style: add category badge to ProductDetailScreen header
 
+## v1.6.3
+- feat: add search bar to ProductScreen with live filtering
+
