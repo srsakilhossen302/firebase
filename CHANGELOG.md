@@ -73,3 +73,6 @@
 ## v1.3.4
 - feat: add Sign Out action to EmailVerified AppBar
 
+## v1.3.5
+- fix: cancel auto-polling timer in dispose() to avoid leaks
+
