@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:my_app/Email_Verified.dart';
 import 'package:my_app/Home%20Directory/Home_Page.dart';
 import 'package:my_app/SignIn_Page.dart';
+
 class Wrapper extends StatefulWidget {
   const Wrapper({super.key});
 
@@ -14,22 +15,30 @@ class _WrapperState extends State<Wrapper> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: StreamBuilder(
-          stream: FirebaseAuth.instance.authStateChanges(),
-          builder: (context, snapshot){
-        if(snapshot.hasData){
-          print(snapshot.data);
-          if(
-          snapshot.data!.emailVerified
-          ){
-            return HomePage();
-          }else{
-            return EmailVerified();
+      body: StreamBuilder<User?>(
+        stream: FirebaseAuth.instance.authStateChanges(),
+        builder: (context, snapshot) {
+          // Show loading indicator while waiting
+          if (snapshot.connectionState == ConnectionState.waiting) {
+            return const Center(
+              child: CircularProgressIndicator(
+                color: Colors.deepPurple,
+              ),
+            );
           }
-        } else{
-          return SigninPage();
-        }
-      }),
+
+          if (snapshot.hasData && snapshot.data != null) {
+            final user = snapshot.data!;
+            if (user.emailVerified) {
+              return const HomePage();
+            } else {
+              return const EmailVerified();
+            }
+          } else {
+            return const SigninPage();
+          }
+        },
+      ),
     );
   }
 }
