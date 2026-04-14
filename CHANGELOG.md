@@ -100,3 +100,6 @@
 ## v1.4.3
 - feat: add broken image fallback widget to ProductCard
 
+## v1.4.4
+- style: add category chip badge to ProductCard
+
