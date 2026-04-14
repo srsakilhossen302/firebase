@@ -46,3 +46,6 @@
 ## v1.2.5
 - feat: add password mismatch validator to SignUp
 
+## v1.2.6
+- feat: send email verification after successful SignUp
+
