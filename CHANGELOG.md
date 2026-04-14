@@ -49,3 +49,6 @@
 ## v1.2.6
 - feat: send email verification after successful SignUp
 
+## v1.2.7
+- fix: add dispose() to SignUp controllers to prevent memory leak
+
