@@ -55,3 +55,6 @@
 ## v1.2.8
 - style: add account creation icon header to SignUp page
 
+## v1.2.9
+- feat: add success view after password reset email sent
+
