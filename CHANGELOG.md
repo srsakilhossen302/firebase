@@ -130,3 +130,6 @@
 ## v1.5.3
 - feat: add empty state view when no products match search
 
+## v1.5.4
+- feat: add error/retry state to HomePage FutureBuilder
+
