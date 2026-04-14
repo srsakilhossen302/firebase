@@ -64,3 +64,6 @@
 ## v1.3.1
 - fix: add dispose() to ForgetPassword email controller
 
+## v1.3.2
+- feat: add auto-polling Timer every 5s in EmailVerified
+
