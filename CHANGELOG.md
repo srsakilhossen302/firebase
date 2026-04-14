@@ -7,3 +7,6 @@
 ## v1.1.2
 - fix: remove unused SignIn import from main.dart
 
+## v1.1.3
+- feat: implement Wrapper loading state with CircularProgressIndicator
+
