@@ -145,3 +145,6 @@
 ## v1.5.8
 - feat: add animated wishlist heart button to ProductDetailScreen
 
+## v1.5.9
+- feat: add total price calculation to ProductDetailScreen
+
