@@ -61,3 +61,6 @@
 ## v1.3.0
 - feat: auto-dismiss ForgetPassword page on success
 
+## v1.3.1
+- fix: add dispose() to ForgetPassword email controller
+
