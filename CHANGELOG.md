@@ -115,3 +115,6 @@
 ## v1.4.8
 - feat: add search bar to HomePage with real-time filtering
 
+## v1.4.9
+- feat: add category filter chips row to HomePage
+
