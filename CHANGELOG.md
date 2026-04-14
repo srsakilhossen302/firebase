@@ -31,3 +31,6 @@
 ## v1.2.0
 - feat: add show/hide password toggle to SignIn page
 
+## v1.2.1
+- feat: add loading spinner on SignIn ElevatedButton
+
