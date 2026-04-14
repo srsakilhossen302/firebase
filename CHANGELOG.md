@@ -154,3 +154,6 @@
 ## v1.6.1
 - feat: add Buy Now button (coming soon) to ProductDetailScreen
 
+## v1.6.2
+- style: add category badge to ProductDetailScreen header
+
