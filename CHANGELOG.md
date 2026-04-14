@@ -121,3 +121,6 @@
 ## v1.5.0
 - feat: add user greeting with first name to HomePage
 
+## v1.5.1
+- feat: add user profile dialog with Google avatar in HomePage
+
