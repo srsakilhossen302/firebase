@@ -163,3 +163,6 @@
 ## v1.6.4
 - feat: add sort by price ascending to ProductScreen
 
+## v1.6.5
+- feat: add sort by price descending to ProductScreen
+
