@@ -58,3 +58,6 @@
 ## v1.2.9
 - feat: add success view after password reset email sent
 
+## v1.3.0
+- feat: auto-dismiss ForgetPassword page on success
+
