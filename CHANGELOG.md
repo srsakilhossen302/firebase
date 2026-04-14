@@ -34,3 +34,6 @@
 ## v1.2.1
 - feat: add loading spinner on SignIn ElevatedButton
 
+## v1.2.2
+- feat: add loading spinner on Google sign-in OutlinedButton
+
