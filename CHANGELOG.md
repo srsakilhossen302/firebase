@@ -76,3 +76,6 @@
 ## v1.3.5
 - fix: cancel auto-polling timer in dispose() to avoid leaks
 
+## v1.3.6
+- style: add animated scale icon to EmailVerified header
+
