@@ -88,3 +88,6 @@
 ## v1.3.9
 - feat: add fetchProductById() to api_call.dart
 
+## v1.4.0
+- refactor: extract base URL as constant in api_call.dart
+
