@@ -124,3 +124,6 @@
 ## v1.5.1
 - feat: add user profile dialog with Google avatar in HomePage
 
+## v1.5.2
+- feat: add product count label to HomePage grid
+
