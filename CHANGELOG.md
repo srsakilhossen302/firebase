@@ -28,3 +28,6 @@
 ## v1.1.9
 - style: add OR divider between email and Google sign-in buttons
 
+## v1.2.0
+- feat: add show/hide password toggle to SignIn page
+
