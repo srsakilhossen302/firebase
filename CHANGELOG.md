@@ -4,3 +4,6 @@
 ## v1.1.1
 - style: apply deepPurple as primary brand color
 
+## v1.1.2
+- fix: remove unused SignIn import from main.dart
+
