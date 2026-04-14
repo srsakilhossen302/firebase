@@ -172,3 +172,6 @@
 ## v1.6.7
 - feat: add active sort indicator chip to ProductScreen
 
+## v1.6.8
+- feat: add product count label to ProductScreen
+
