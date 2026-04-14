@@ -37,3 +37,6 @@
 ## v1.2.2
 - feat: add loading spinner on Google sign-in OutlinedButton
 
+## v1.2.3
+- style: replace Forget Password link with right-aligned TextButton
+
