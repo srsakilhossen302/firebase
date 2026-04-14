@@ -10,3 +10,6 @@
 ## v1.1.3
 - feat: implement Wrapper loading state with CircularProgressIndicator
 
+## v1.1.4
+- fix: typed StreamBuilder<User?> to avoid null issues in Wrapper
+
