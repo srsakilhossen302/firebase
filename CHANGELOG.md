@@ -43,3 +43,6 @@
 ## v1.2.4
 - feat: add confirm password field to SignUp page
 
+## v1.2.5
+- feat: add password mismatch validator to SignUp
+
