@@ -148,3 +148,6 @@
 ## v1.5.9
 - feat: add total price calculation to ProductDetailScreen
 
+## v1.6.0
+- feat: add Add to Cart snackbar to ProductDetailScreen
+
