@@ -97,3 +97,6 @@
 ## v1.4.2
 - feat: add image loading progress indicator to ProductCard
 
+## v1.4.3
+- feat: add broken image fallback widget to ProductCard
+
