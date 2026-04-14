@@ -109,3 +109,6 @@
 ## v1.4.6
 - feat: navigate to ProductDetailScreen on ProductCard tap
 
+## v1.4.7
+- style: change price color to deepPurple in ProductCard
+
