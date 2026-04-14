@@ -19,3 +19,6 @@
 ## v1.1.6
 - feat: add email regex validation to SignIn form
 
+## v1.1.7
+- feat: add password length validation to SignIn form
+
