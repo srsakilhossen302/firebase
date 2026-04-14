@@ -22,3 +22,6 @@
 ## v1.1.7
 - feat: add password length validation to SignIn form
 
+## v1.1.8
+- fix: null-safe Google sign-in with early return on cancel
+
