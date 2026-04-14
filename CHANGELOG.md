@@ -118,3 +118,6 @@
 ## v1.4.9
 - feat: add category filter chips row to HomePage
 
+## v1.5.0
+- feat: add user greeting with first name to HomePage
+
