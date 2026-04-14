@@ -16,3 +16,6 @@
 ## v1.1.5
 - feat: add form key and GlobalKey<FormState> to SignIn page
 
+## v1.1.6
+- feat: add email regex validation to SignIn form
+
