@@ -70,3 +70,6 @@
 ## v1.3.3
 - feat: add resend verification email button to EmailVerified
 
+## v1.3.4
+- feat: add Sign Out action to EmailVerified AppBar
+
