@@ -94,3 +94,6 @@
 ## v1.4.1
 - feat: add Hero animation tag to ProductCard image
 
+## v1.4.2
+- feat: add image loading progress indicator to ProductCard
+
