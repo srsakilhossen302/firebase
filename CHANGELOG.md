@@ -67,3 +67,6 @@
 ## v1.3.2
 - feat: add auto-polling Timer every 5s in EmailVerified
 
+## v1.3.3
+- feat: add resend verification email button to EmailVerified
+
