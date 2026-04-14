@@ -139,3 +139,6 @@
 ## v1.5.6
 - feat: create ProductDetailScreen with Hero image display
 
+## v1.5.7
+- feat: add quantity selector (+/-) to ProductDetailScreen
+
