@@ -127,3 +127,6 @@
 ## v1.5.2
 - feat: add product count label to HomePage grid
 
+## v1.5.3
+- feat: add empty state view when no products match search
+
