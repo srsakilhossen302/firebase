@@ -112,3 +112,6 @@
 ## v1.4.7
 - style: change price color to deepPurple in ProductCard
 
+## v1.4.8
+- feat: add search bar to HomePage with real-time filtering
+
