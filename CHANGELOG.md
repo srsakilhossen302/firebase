@@ -151,3 +151,6 @@
 ## v1.6.0
 - feat: add Add to Cart snackbar to ProductDetailScreen
 
+## v1.6.1
+- feat: add Buy Now button (coming soon) to ProductDetailScreen
+
