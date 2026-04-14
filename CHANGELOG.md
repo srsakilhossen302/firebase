@@ -40,3 +40,6 @@
 ## v1.2.3
 - style: replace Forget Password link with right-aligned TextButton
 
+## v1.2.4
+- feat: add confirm password field to SignUp page
+
