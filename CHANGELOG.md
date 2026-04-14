@@ -166,3 +166,6 @@
 ## v1.6.5
 - feat: add sort by price descending to ProductScreen
 
+## v1.6.6
+- feat: add sort by top rating to ProductScreen
+
