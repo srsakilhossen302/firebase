@@ -13,3 +13,6 @@
 ## v1.1.4
 - fix: typed StreamBuilder<User?> to avoid null issues in Wrapper
 
+## v1.1.5
+- feat: add form key and GlobalKey<FormState> to SignIn page
+
