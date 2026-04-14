@@ -142,3 +142,6 @@
 ## v1.5.7
 - feat: add quantity selector (+/-) to ProductDetailScreen
 
+## v1.5.8
+- feat: add animated wishlist heart button to ProductDetailScreen
+
