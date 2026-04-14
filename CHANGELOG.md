@@ -136,3 +136,6 @@
 ## v1.5.5
 - refactor: move product grid to GridView in HomePage
 
+## v1.5.6
+- feat: create ProductDetailScreen with Hero image display
+
